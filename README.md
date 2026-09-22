@@ -1,4 +1,4 @@
-# SnipGPT
+# Snip
 
 ---
 
