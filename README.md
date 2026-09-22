@@ -4,9 +4,9 @@
 
 ## Overview
 
-SnipGPT is a Windows desktop app that lets you capture anything on your screen and get an AI answer for it. You can capture a region, a window, or your whole screen, extract text from it with OCR, and send it to an AI model — all without opening a browser or keeping a chat window around.
+Snip is a Windows desktop app that lets you capture anything on your screen and get an AI answer for it. You can capture a region, a window, or your whole screen, extract text from it with OCR, and send it to an AI model — all without opening a browser or keeping a chat window around.
 
-It also supports asking questions about your own PDF documents. When you have PDFs loaded, SnipGPT searches them locally first and only sends the relevant excerpts to the model, not the whole file.
+It also supports asking questions about your own PDF documents. When you have PDFs loaded, Snip searches them locally first and only sends the relevant excerpts to the model, not the whole file.
 
 Version 4.0. Built with WPF and .NET. Supports OpenAI and Gemini.
 
@@ -16,7 +16,7 @@ Version 4.0. Built with WPF and .NET. Supports OpenAI and Gemini.
 
 The basic flow is: capture something, optionally type a question, read the answer in a small overlay. That's it. There's no persistent chat, no history you have to manage, no sidebar full of conversations. You ask, you get an answer, you move on.
 
-If you have PDFs loaded, SnipGPT checks them before doing anything else. If it finds something relevant, it builds a compact evidence package from the matching excerpts and includes that in the request. If the PDFs don't have what you need, it falls back to web search, and if that's not available or not relevant, it falls back to general model knowledge.
+If you have PDFs loaded, Snip checks them before doing anything else. If it finds something relevant, it builds a compact evidence package from the matching excerpts and includes that in the request. If the PDFs don't have what you need, it falls back to web search, and if that's not available or not relevant, it falls back to general model knowledge.
 
 For plain text questions without a screenshot, you can use the prompt popup directly.
 
@@ -26,10 +26,10 @@ For plain text questions without a screenshot, you can use the prompt popup dire
 
 - **Capture modes** — app, window, screen region, or full screen. You can combine multiple captures when a question needs more context.
 - **OCR** — extracts visible text from screenshots so the model can read what's on your screen.
-- **PDF answers** — load your own documents and ask questions about them. SnipGPT keeps a local index and searches it before sending anything to the model. You can load multiple PDFs and they keep their separate identities, filenames, and page references.
+- **PDF answers** — load your own documents and ask questions about them. Snip keeps a local index and searches it before sending anything to the model. You can load multiple PDFs and they keep their separate identities, filenames, and page references.
 - **Efficient evidence** — instead of attaching full PDFs to every request, SnipGPT extracts only the sentences and excerpts that are actually relevant to your question. The evidence package is small and question-specific.
 - **Token estimates** — in the Documents section you can estimate how many tokens a PDF would contribute to a request, locally, without making any API call.
-- **Web + general fallback** — if your PDFs don't have the answer, SnipGPT can search the web or answer from the model's general knowledge depending on what the question is asking for.
+- **Web + general fallback** — if your PDFs don't have the answer, Snip can search the web or answer from the model's general knowledge depending on what the question is asking for.
 - **History** — SnipGPT keeps a lightweight request history organized by listening session. You can browse recent requests and answers without it turning into a full chat client.
 - **Shortcuts** — everything is keyboard-driven. Capture, open the prompt, browse history, copy answers — all configurable.
 - **Cost controls** — token estimation before requests, per-request limits, and local usage tracking.
@@ -65,7 +65,7 @@ Request history is now organized into listening sessions. A new session starts w
 
 ## Getting started
 
-1. Launch SnipGPT and open the Control Center.
+1. Launch Snip and open the Control Center.
 2. Add an OpenAI or Gemini API key and pick a model.
 3. Set your capture shortcut and preferred overlay position.
 4. Optionally add PDFs under Documents.
@@ -77,7 +77,7 @@ Web search availability depends on the selected provider and how your API access
 
 ## Understanding PDF token costs
 
-Having PDFs loaded doesn't mean SnipGPT attaches them to every request. The local search runs first, picks the relevant parts, and the evidence reducer cuts that down further before anything reaches the model. The token estimate shown per document is the size of the extracted PDF content — not the cost of any specific question you ask about it.
+Having PDFs loaded doesn't mean Snip attaches them to every request. The local search runs first, picks the relevant parts, and the evidence reducer cuts that down further before anything reaches the model. The token estimate shown per document is the size of the extracted PDF content — not the cost of any specific question you ask about it.
 
 ---
 
