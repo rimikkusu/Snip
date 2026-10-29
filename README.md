@@ -10,7 +10,6 @@ Press **Start Listening** to run Snip from the system tray. Capture a region, re
 | --- | --- |
 | [**Windows EXE**](https://github.com/rimikkusu/Snip/releases/download/v4.1.0/Snip-4.1.0.exe) | Standalone app with all dependencies included |
 | [**Complete app ZIP**](https://github.com/rimikkusu/Snip/releases/download/v4.1.0/Snip-4.1.0-win-x64.zip) | All exported app files, ready to extract and run |
-| [**Source project ZIP**](https://github.com/rimikkusu/Snip/releases/download/v4.1.0/Snip-4.1.0-source.zip) | Organized C# / WPF project, solution, tests and build script |
 
 For Windows 10/11, 64-bit. AI requests require an internet connection and an API key for the provider you use.
 
