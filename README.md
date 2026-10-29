@@ -8,8 +8,8 @@ Press **Start Listening** to run Snip from the system tray. Capture a region, re
 
 | Download | Contents |
 | --- | --- |
-| [**Windows EXE**](https://github.com/rimikkusu/Snip/releases/download/v4.1.0/Snip-4.1.0.exe) | Standalone app with all dependencies included |
-| [**Complete app ZIP**](https://github.com/rimikkusu/Snip/releases/download/v4.1.0/Snip-4.1.0-win-x64.zip) | All exported app files, ready to extract and run |
+| [**Windows EXE**](https://github.com/rimikkusu/Snip/releases/download/v4.1.0/Snip-v4.1.0.exe) | Standalone app with all dependencies included |
+| [**Complete app ZIP**](https://github.com/rimikkusu/Snip/releases/download/v4.1.0/Snip-v4.1.0-win-x64.zip) | All exported app files, ready to extract and run |
 
 For Windows 10/11, 64-bit. AI requests require an internet connection and an API key for the provider you use.
 
@@ -39,7 +39,7 @@ For Windows 10/11, 64-bit. AI requests require an internet connection and an API
 ### Standalone EXE
 
 1. Download **Windows EXE** from the table above.
-2. Save `Snip-4.1.0.exe` in a folder of your choice.
+2. Save `Snip-v4.1.0.exe` in a folder of your choice.
 3. Double-click it to start Snip.
 
 No installer or separate .NET installation is required; the executable includes its dependencies.
@@ -50,7 +50,7 @@ No installer or separate .NET installation is required; the executable includes 
 2. Open the extracted folder and run **Snip 4.1.0.exe**.
 3. Keep the executable and its accompanying files together.
 
-The [`app`](app) folder in this repository contains the same complete exported app. The **Source project ZIP** is for editing or building Snip yourself.
+The [`app`](app) folder in this repository contains the same complete exported app.
 
 ## First setup
 
