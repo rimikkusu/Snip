@@ -1,0 +1,11 @@
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.log
+*.tmp
+.DS_Store
+.env
+.env.*
+secrets.json
